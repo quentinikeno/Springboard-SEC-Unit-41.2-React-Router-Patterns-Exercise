@@ -4,8 +4,8 @@ const DogLink = ({ name, src }) => {
 	return (
 		<div>
 			<h3>{name}</h3>
-			<img src={`./images/${src}`} alt={name} />
-			<Link to={`/dogs/${src}`} />
+			<img src={src} alt={name} />
+			<Link to={`/dogs/${name.toLowerCase()}`} />
 		</div>
 	);
 };
