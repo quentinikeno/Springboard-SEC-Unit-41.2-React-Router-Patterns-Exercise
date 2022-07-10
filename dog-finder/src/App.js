@@ -1,6 +1,7 @@
 import { BrowserRouter, Switch, Route, Redirect } from "react-router-dom";
 import Doglist from "./Doglist";
 import DogDetail from "./DogDetail";
+import Navbar from "./Navbar";
 import whiskey from "./imgs/whiskey.jpg";
 import tubby from "./imgs/tubby.jpg";
 import duke from "./imgs/duke.jpg";
@@ -8,9 +9,11 @@ import perry from "./imgs/perry.jpg";
 import "./App.css";
 
 function App({ dogs }) {
+	const dogNames = dogs.map((dog) => dog.name);
 	return (
 		<div className="App">
 			<BrowserRouter>
+				<Navbar names={dogNames} />
 				<Switch>
 					<Route exact path="/dogs">
 						<Doglist dogs={dogs} />
