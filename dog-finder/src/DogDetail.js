@@ -14,7 +14,7 @@ const DogDetail = ({ dogs }) => {
 			<h4>Age: {age}</h4>
 			<ul>
 				{facts.map((fact) => (
-					<li>{fact}</li>
+					<li key={fact}>{fact}</li>
 				))}
 			</ul>
 		</div>
