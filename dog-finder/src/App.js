@@ -1,4 +1,4 @@
-import { Routes, Route, Navigate } from "react-router-dom";
+import { Switch, Route, Redirect } from "react-router-dom";
 import Doglist from "./Doglist";
 import DogDetail from "./DogDetail";
 import "./App.css";
@@ -6,15 +6,15 @@ import "./App.css";
 function App({ dogs }) {
 	return (
 		<div className="App">
-			<Routes>
+			<Switch>
 				<Route exact path="/dogs">
 					<Doglist dogs={dogs} />
 				</Route>
 				<Route exact path="/dogs/:name">
 					<DogDetail />
 				</Route>
-				<Navigate replace to="/dogs" />
-			</Routes>
+				<Redirect replace to="/dogs" />
+			</Switch>
 		</div>
 	);
 }
