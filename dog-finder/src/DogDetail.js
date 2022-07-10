@@ -8,7 +8,7 @@ const DogDetail = ({ dogs }) => {
 		<div>
 			<h1>{name}</h1>
 			<h4>{age}</h4>
-			<img src={`./images/${src}`} alt={dog.name} />
+			<img src={`./images/${src}`} alt={name} />
 			<ul>
 				{facts.map((fact) => (
 					<li>{fact}</li>
