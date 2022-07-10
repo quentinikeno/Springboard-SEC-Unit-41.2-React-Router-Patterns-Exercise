@@ -1,0 +1,77 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should matchSnapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="Doglist"
+  >
+    <h1>
+      React Dog Finder
+    </h1>
+    <div
+      class="Doglist-list"
+    >
+      <div
+        class="DogLink"
+      >
+        <a
+          href="/dogs/whiskey"
+        >
+          <h3>
+            Whiskey
+          </h3>
+          <img
+            alt="Whiskey"
+            src="whiskey.jpg"
+          />
+        </a>
+      </div>
+      <div
+        class="DogLink"
+      >
+        <a
+          href="/dogs/duke"
+        >
+          <h3>
+            Duke
+          </h3>
+          <img
+            alt="Duke"
+            src="duke.jpg"
+          />
+        </a>
+      </div>
+      <div
+        class="DogLink"
+      >
+        <a
+          href="/dogs/perry"
+        >
+          <h3>
+            Perry
+          </h3>
+          <img
+            alt="Perry"
+            src="perry.jpg"
+          />
+        </a>
+      </div>
+      <div
+        class="DogLink"
+      >
+        <a
+          href="/dogs/tubby"
+        >
+          <h3>
+            Tubby
+          </h3>
+          <img
+            alt="Tubby"
+            src="tubby.jpg"
+          />
+        </a>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
