@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should matchSnapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="DogLink"
+  >
+    <a
+      href="/dogs/whiskey"
+    >
+      <h3>
+        Whiskey
+      </h3>
+      <img
+        alt="Whiskey"
+        src="whiskey.jpg"
+      />
+    </a>
+  </div>
+</DocumentFragment>
+`;
