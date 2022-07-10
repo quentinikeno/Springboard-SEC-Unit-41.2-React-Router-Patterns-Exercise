@@ -4,9 +4,11 @@ import "./Navbar.css";
 const Navbar = ({ names }) => {
 	return (
 		<nav className="Navbar">
-			<NavLink to="/dogs">Home</NavLink>
+			<NavLink exact to="/dogs">
+				Home
+			</NavLink>
 			{names.map((name) => (
-				<NavLink to={`/dogs/${name.toLowerCase()}`} key={name}>
+				<NavLink exact to={`/dogs/${name.toLowerCase()}`} key={name}>
 					{name}
 				</NavLink>
 			))}
