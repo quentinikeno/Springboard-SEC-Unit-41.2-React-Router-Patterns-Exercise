@@ -3,9 +3,10 @@ import { Link } from "react-router-dom";
 const DogLink = ({ name, src }) => {
 	return (
 		<div>
-			<h3>{name}</h3>
-			<img src={src} alt={name} />
-			<Link to={`/dogs/${name.toLowerCase()}`} />
+			<Link to={`/dogs/${name.toLowerCase()}`}>
+				<h3>{name}</h3>
+				<img src={src} alt={name} />
+			</Link>
 		</div>
 	);
 };
