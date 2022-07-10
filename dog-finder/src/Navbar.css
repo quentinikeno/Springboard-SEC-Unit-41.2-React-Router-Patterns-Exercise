@@ -1,0 +1,17 @@
+.Navbar {
+	display: flex;
+	justify-content: space-around;
+	margin: 2rem 10rem;
+	padding: 1rem;
+}
+
+.Navbar a {
+	color: rgba(0, 0, 0, 0.5);
+	text-decoration: none;
+	transition: all ease 1s;
+	font-size: 1.25rem;
+}
+
+.Navbar :is(a.active, a:hover) {
+	color: black;
+}
