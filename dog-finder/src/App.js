@@ -16,7 +16,7 @@ function App({ dogs }) {
 						<Doglist dogs={dogs} />
 					</Route>
 					<Route exact path="/dogs/:name">
-						<DogDetail />
+						<DogDetail dogs={dogs} />
 					</Route>
 					<Redirect replace to="/dogs" />
 				</Switch>
