@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import "./ColorList.css";
 
 const ColorList = ({ colors }) => {
 	const colorLinks = colors.map((color) => (

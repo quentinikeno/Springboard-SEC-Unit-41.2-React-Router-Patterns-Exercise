@@ -1,0 +1,16 @@
+.ColorList-jumbotron {
+	color: white;
+	background-color: black;
+	padding: 8rem;
+}
+
+.ColorList-jumbotron a {
+	color: white;
+	font-size: 2rem;
+}
+
+.ColorList-colors a {
+	display: block;
+	margin: 1rem auto;
+	font-size: 1.25rem;
+}
