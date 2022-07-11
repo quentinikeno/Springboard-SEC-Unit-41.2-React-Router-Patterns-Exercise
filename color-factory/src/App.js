@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Switch, Route } from "react-router-dom";
+import { Switch, Route, Redirect } from "react-router-dom";
 import { v4 as uuid } from "uuid";
 
 import ColorList from "./ColorList";
@@ -28,6 +28,7 @@ function App() {
 				<Route exact path="/colors/:name">
 					<ColorDetail colors={colors} />
 				</Route>
+				<Redirect to="/colors" />
 			</Switch>
 		</div>
 	);
