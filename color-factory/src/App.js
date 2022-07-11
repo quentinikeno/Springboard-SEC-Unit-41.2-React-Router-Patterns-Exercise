@@ -19,7 +19,7 @@ function App() {
 		<div className="App">
 			<Switch>
 				<Route exact path="/colors">
-					<ColorList colors={colorsNames} />
+					<ColorList colors={colors} />
 				</Route>
 				<Route exact path="/colors/new">
 					<NewColorForm />

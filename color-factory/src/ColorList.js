@@ -2,7 +2,9 @@ import { Link } from "react-router-dom";
 
 const ColorList = ({ colors }) => {
 	const colorLinks = colors.map((color) => (
-		<Link to={`colors/${color.toLowerCase()}`}>{color}</Link>
+		<Link key={color.id} to={`colors/${color.name.toLowerCase()}`}>
+			{color.name}
+		</Link>
 	));
 	return (
 		<div className="ColorList">
