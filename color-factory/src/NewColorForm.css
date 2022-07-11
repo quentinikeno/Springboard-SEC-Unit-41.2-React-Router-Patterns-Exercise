@@ -1,0 +1,24 @@
+.NewColorForm {
+	height: 100%;
+	width: 100%;
+	background: rgb(2, 0, 36);
+	background: linear-gradient(
+		90deg,
+		rgba(2, 0, 36, 1) 0%,
+		rgba(62, 9, 121, 1) 0%,
+		rgba(0, 212, 255, 1) 100%
+	);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.NewColorForm form {
+	background-color: #f0f0f0;
+	padding: 1rem;
+	border-radius: 0.25rem;
+}
+
+.NewColorForm div {
+	padding: 1rem;
+}

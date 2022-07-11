@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { useHistory } from "react-router-dom";
 import { v4 as uuid } from "uuid";
+import "./NewColorForm.css";
 
 const NewColorForm = ({ addColor }) => {
 	const initialState = {
@@ -23,28 +24,36 @@ const NewColorForm = ({ addColor }) => {
 	};
 
 	return (
-		<form className="NewColorForm" onSubmit={handleSubmit}>
-			<label htmlFor="name">Color Name</label>
-			<input
-				type="text"
-				id="name"
-				name="name"
-				value={formData.name}
-				onChange={handleChange}
-				placeholder="Color Name"
-				required
-			/>
-			<label htmlFor="color">Color</label>
-			<input
-				type="color"
-				id="color"
-				name="color"
-				value={formData.color}
-				onChange={handleChange}
-				required
-			/>
-			<button type="submit">Create Color!</button>
-		</form>
+		<div className="NewColorForm">
+			<form onSubmit={handleSubmit}>
+				<div>
+					<label htmlFor="name">Color Name</label>
+					<input
+						type="text"
+						id="name"
+						name="name"
+						value={formData.name}
+						onChange={handleChange}
+						placeholder="Color Name"
+						required
+					/>
+				</div>
+				<div>
+					<label htmlFor="color">Color</label>
+					<input
+						type="color"
+						id="color"
+						name="color"
+						value={formData.color}
+						onChange={handleChange}
+						required
+					/>
+				</div>
+				<div>
+					<button type="submit">Create Color!</button>
+				</div>
+			</form>
+		</div>
 	);
 };
 
