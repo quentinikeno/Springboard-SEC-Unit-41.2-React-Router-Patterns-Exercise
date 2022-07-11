@@ -6,6 +6,7 @@ const ColorList = ({ colors }) => {
 			{color.name}
 		</Link>
 	));
+	colorLinks.reverse();
 	return (
 		<div className="ColorList">
 			<div className="ColorList-jumbotron">
