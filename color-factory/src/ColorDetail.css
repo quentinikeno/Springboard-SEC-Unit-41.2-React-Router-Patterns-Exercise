@@ -1,0 +1,17 @@
+.ColorDetail {
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.ColorDetail div {
+	background-color: #f0f0f0;
+	padding: 1rem;
+	border-radius: 0.25rem;
+	box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.25);
+}
+
+.ColorDetail h1 {
+	margin-top: 0.5rem;
+}

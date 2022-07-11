@@ -1,4 +1,5 @@
 import { useParams, Link, Redirect } from "react-router-dom";
+import "./ColorDetail.css";
 
 const ColorDetail = ({ colors }) => {
 	const { name } = useParams();
@@ -8,8 +9,10 @@ const ColorDetail = ({ colors }) => {
 			className="ColorDetail"
 			style={{ backgroundColor: foundColor.color }}
 		>
-			<h1>This is {foundColor.name}</h1>
-			<Link to="/colors">See all colors</Link>
+			<div>
+				<h1>This is {foundColor.name}</h1>
+				<Link to="/colors">See all colors</Link>
+			</div>
 		</div>
 	) : (
 		<Redirect to="/colors" />
