@@ -4,6 +4,7 @@ import { v4 as uuid } from "uuid";
 
 import ColorList from "./ColorList";
 import NewColorForm from "./NewColorForm";
+import ColorDetail from "./ColorDetail";
 
 import "./App.css";
 
@@ -23,6 +24,9 @@ function App() {
 				</Route>
 				<Route exact path="/colors/new">
 					<NewColorForm addColor={addColor} />
+				</Route>
+				<Route exact path="/colors/:name">
+					<ColorDetail colors={colors} />
 				</Route>
 			</Switch>
 		</div>
