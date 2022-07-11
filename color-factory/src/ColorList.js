@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 
-const ColorList = (colors = ["red", "green", "blue"]) => {
+const ColorList = ({ colors = ["red", "green", "blue"] }) => {
 	const colorLinks = colors.map((color) => (
 		<Link to={`colors/${color}`}>{color}</Link>
 	));
