@@ -19,10 +19,10 @@ function App() {
 		<div className="App">
 			<Switch>
 				<Route exact path="/colors">
-					<ColorList colors={colors} addColor={addColor} />
+					<ColorList colors={colors} />
 				</Route>
 				<Route exact path="/colors/new">
-					<NewColorForm />
+					<NewColorForm colors={colors} addColor={addColor} />
 				</Route>
 			</Switch>
 		</div>
