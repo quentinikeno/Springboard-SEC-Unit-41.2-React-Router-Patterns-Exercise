@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Switch, Route } from "react-router-dom";
+import { v4 as uuid } from "uuid";
 
 import ColorList from "./ColorList";
 import NewColorForm from "./NewColorForm";
@@ -8,9 +9,9 @@ import "./App.css";
 
 function App() {
 	const initialState = [
-		{ name: "red", color: "red" },
-		{ name: "green", color: "green" },
-		{ name: "blue", color: "blue" },
+		{ id: uuid(), name: "red", color: "red" },
+		{ id: uuid(), name: "green", color: "green" },
+		{ id: uuid(), name: "blue", color: "blue" },
 	];
 	const [colors, setColors] = useState(initialState);
 	const colorsNames = colors.map((color) => color.name);
