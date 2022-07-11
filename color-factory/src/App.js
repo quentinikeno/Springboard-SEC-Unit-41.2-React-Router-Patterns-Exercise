@@ -14,7 +14,7 @@ function App() {
 		{ id: uuid(), name: "blue", color: "blue" },
 	];
 	const [colors, setColors] = useState(initialState);
-	const addColor = (newColor) => setColors(...colors, newColor);
+	const addColor = (newColor) => setColors([...colors, newColor]);
 	return (
 		<div className="App">
 			<Switch>
@@ -22,7 +22,7 @@ function App() {
 					<ColorList colors={colors} />
 				</Route>
 				<Route exact path="/colors/new">
-					<NewColorForm colors={colors} addColor={addColor} />
+					<NewColorForm addColor={addColor} />
 				</Route>
 			</Switch>
 		</div>
